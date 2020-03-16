@@ -90,6 +90,7 @@ namespace PeterKottas.DotNetCore.WindowsService
 			{
 				Console.WriteLine("The {0} service has stopped.", _consoleService.ServiceName);
 				_exitCode = ExitCode.Ok;
+				_exit.Set();
 			}
 		}
 
